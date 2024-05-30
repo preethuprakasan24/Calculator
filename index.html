@@ -20,37 +20,41 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="section">
+    <div class="section" style="height: 100vh; width: 100%">
       <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-4  calc bg-secondary">
+        <div
+          class="col-md-4 calc bg-secondary justify-content-center align-items-center"
+          style="height: 450px; width: 340px"
+        >
           <div class="screen ms-3">
-            <input class="textScreen" type="text" placeholder="0" />
+            <input id="result" class="textScreen" type="text" placeholder="0" readonly />
           </div>
           <div class="keys ms-4">
-            <button>CI</button>
-            <button>DEL</button>
-            <button>%</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button>.</button>
-            <button>0</button>
-            <button class="equal">=</button>
+            <button onclick="clearAll()">Cl</button>
+            <button onclick="del()">DEL</button>
+            <button onclick="display('%')">%</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="display(7)">7</button>
+            <button onclick="display(8)">8</button>
+            <button onclick="display(9)">9</button>
+            <button onclick="display('*')">*</button>
+            <button onclick="display(4)">4</button>
+            <button onclick="display(5)">5</button>
+            <button onclick="display(6)">6</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display(1)">1</button>
+            <button onclick="display(2)">2</button>
+            <button onclick="display(3)">3</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="display(0)">0</button>
+            <button class="equal" onclick="equal()">=</button>
           </div>
         </div>
         <div class="col-md-4"></div>
       </div>
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>

@@ -7,8 +7,6 @@ body{
     overflow-x: hidden;
 }
 .section{
-    width: 100%;
-    height: 100vh;
     background-image: url('https://c8.alamy.com/comp/JJFDPJ/digital-composite-of-white-math-doodles-and-blue-background-JJFDPJ.jpg');
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("https://c8.alamy.com/comp/JJFDPJ/digital-composite-of-white-math-doodles-and-blue-background-JJFDPJ.jpg"); */
     background-repeat: no-repeat;
@@ -18,7 +16,6 @@ body{
 }
 
 .calc{
-    width: 340px;
     background-color: #ecf0f3;
     box-shadow: inset 5px 5px 12px #ffffff, inset 5px 5px 12px rgba(0, 0, 0, 0.16);
     border-radius: 30px;
